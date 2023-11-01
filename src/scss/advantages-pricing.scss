@@ -1,0 +1,136 @@
+/* advantages pricing styles */
+
+.advantages-pricing-line {
+    width: 80%;
+    border: 2px solid #645766;
+}
+
+.advantages-pricing {
+    background-image: url(../images/pricing-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pricing-title {
+    padding-top: 88px;
+    padding-bottom: 32px;
+
+    font-family: "Montserrat Bold";
+    color: #FFF;
+    font-size: 28px;
+    line-height: 42px;
+    text-transform: none;
+}
+
+.pricing-plans {
+    margin: 0px;
+    padding-bottom: 5px;
+    display: grid;
+    gap: 18px;
+}
+
+.pricing-option {
+    border: 5px solid rgba(255, 255, 255, 0.11);
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+.pricing-header {
+    padding: 36px 49px;
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.option-4-title {
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.option-description {
+    padding-top: 30px;
+}
+
+.price-period {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.price-period span {
+    color: #FFF;
+    font-family: "Montserrat Bold";
+    font-size: 60px;
+    line-height: 62px;
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.section-line {
+    margin-top: 38px;
+    margin-bottom: 30px;
+
+    width: 60px;
+    border: 3px solid #8D81AC;
+}
+
+.license-type {
+    padding-bottom: 37px;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.button-wrapper {
+    padding-bottom: 36px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.purchase-btn {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 25px;
+    border: 0;
+    padding: 13.5px 37px;
+}
+
+.purchase-btn a {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+
+.recommended-option {
+    position: relative;
+
+    grid-column: span 1;
+    border: 0px;
+    margin: 0px -5px 0px -5px;
+
+    background-color: rgba(70, 48, 72, 1);
+}
+
+/* //задати мінімальну висоту
+спробувати зробити флексами */
+
+
+
+.recommended-header {
+    background-color: rgba(0, 0, 0, 0.35);
+}
