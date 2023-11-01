@@ -1,0 +1,66 @@
+/* advantages block description styles */
+
+.code-example {
+    /* padding-left: 3px;
+    padding-bottom: 6px;
+    padding-right: 0px; */
+}
+
+.code-image {
+    margin: 0px 0px 0px 10px;
+}
+
+.code-image-small {}
+
+.code-image-big {
+    display: none;
+}
+
+
+
+.advantages-description {
+    padding-top: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-title {
+    padding-left: 17px;
+    padding-right: 21px;
+}
+
+.advantages-description-wrapper {
+    margin: 0px;
+    padding-top: 36px;
+    padding-bottom: 88px;
+
+    padding-left: 13px;
+    padding-right: 14px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+
+.description-item {
+    padding-left: 13px;
+    padding-right: 14px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.purpose {
+    padding-top: 27px;
+    padding-bottom: 14px;
+}
+
+.purpose-description {
+    color: #848E97;
+    line-height: 21px;
+}

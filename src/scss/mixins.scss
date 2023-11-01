@@ -1,0 +1,27 @@
+@mixin mq($screen, $size) {
+    @if ($size =="min") {
+        @media (min-width: $screen) {
+            @content;
+        }
+    }
+
+    @if ($size =="max") {
+        @media (max-width: $screen) {
+            @content;
+        }
+    }
+}
+
+
+@mixin PseudoPosAbs($abs, $w: 100%, $h: 100%) {
+    position: $abs;
+    width: $w;
+    height: $h;
+}
+
+@mixin PosElFlex ($d: flex, $fd: row, $jc: center, $ai: center) {
+    display: $d ;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
