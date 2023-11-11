@@ -1,0 +1,223 @@
+/* advantages block description styles */
+
+.advant-descr-sect {
+    overflow: hidden;
+    position: relative;
+    font-family: "Montserrat";
+
+    &::before {
+        content: '';
+        @include PseudoPosAbs(absolute);
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+
+    &__sect-wrapper {
+        display: grid;
+    }
+
+    &__title {
+        grid-area: title;
+    }
+
+    .advant-descr-sect__option-list {
+        gap: 33px;
+        grid-area: navbar;
+
+    }
+
+    .advant-descr-sect__option-item {
+        display: flex;
+
+        .option-item__option-image {
+            min-width: 111px;
+        }
+
+        .option-item__description {
+            padding-top: 14px;
+            color: #848E97;
+            line-height: 21px;
+        }
+    }
+}
+
+
+
+@media (max-width: 320px),
+(min-width:320px) {
+    .advant-descr-sect {
+        padding-top: 32px;
+        padding-bottom: 88px;
+
+        padding-left: 13px;
+        padding-right: 14px;
+
+        &::after {
+            content: '';
+            @include PseudoPosAbs(absolute, 317px, 381px);
+            bottom: 0px;
+            right: 0px;
+            background-image: url('../img/here_what_you_get/sample-code-small.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &__sect-wrapper {
+            grid-template-columns: 100%;
+            grid-template-areas:
+                'title'
+                'navbar'
+                '-';
+        }
+
+        &__title {
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 36px;
+            text-align: center;
+
+            padding-left: 17px;
+            padding-right: 21px;
+        }
+
+        .advant-descr-sect__option-list {
+            @include PosElFlex(flex, column, space-between, center);
+            gap: 37px;
+            margin-bottom: 338px;
+        }
+
+
+        .advant-descr-sect__option-item {
+            @include PosElFlex(flex, column, center, center);
+            gap: 27px;
+            text-align: center;
+
+            .option-item__description {
+                line-height: 21px;
+                color: #848E97;
+            }
+
+        }
+    }
+}
+
+@media (min-width:481px) {
+    .advant-descr-sect {
+        padding-top: 62px;
+
+        &::after {
+            content: '';
+            @include PseudoPosAbs(absolute, 700px, 519px);
+            bottom: 0px;
+            right: 0px;
+            background-image: url('../img/here_what_you_get/sample-code-big.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        &__sect-wrapper {
+            grid-template-columns: 100%;
+            grid-template-areas:
+                'title'
+                'navbar'
+                '-';
+            justify-items: center;
+
+        }
+
+        &__title {
+            margin-bottom: 52px;
+            font-size: 42px;
+            line-height: 44px;
+        }
+
+        .advant-descr-sect__option-list {
+            gap: 58px;
+            margin-bottom: 572px;
+        }
+
+        .advant-descr-sect__option-item {
+            @include PosElFlex(flex, row, space-between, center);
+            text-align: left;
+            gap: 23px;
+
+
+            .option-item__title {
+                line-height: 21px;
+            }
+
+            .option-item__description {
+                line-height: 21px;
+                text-align: left;
+            }
+
+        }
+    }
+}
+
+
+@media (min-width:993px) {
+
+    .advant-descr-sect {
+
+        padding-top: 97px;
+        padding-bottom: 69px;
+        min-height: 711px;
+
+        &::before {
+            background-color: #F4F4F4;
+        }
+
+        &::after {
+            padding-top: 10px;
+
+            position: absolute;
+            right: 0px;
+            left: 50%;
+            bottom: 33px;
+        }
+
+        &__sect-wrapper {
+            grid-template-columns: 45% 50%;
+            grid-template-areas:
+                'navbar title'
+                'navbar -';
+            align-items: start;
+            justify-items: start;
+            column-gap: 49px;
+        }
+
+        &__title {
+            margin-bottom: 19px;
+            margin-left: 40px;
+            font-size: clamp(41px, 42px, 48px);
+            line-height: 50px;
+
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .advant-descr-sect__option-list {
+            margin-bottom: 0;
+            gap: 37px;
+        }
+
+        .advant-descr-sect__option-item {
+            @include PosElFlex(flex, row, space-between, center);
+            text-align: left;
+            row-gap: 23px;
+
+            .option-item__option-image {
+                min-width: 111px;
+            }
+        }
+
+        .option-item__description {
+            max-width: 405px;
+            text-align: left;
+        }
+
+    }
+}

@@ -1,9 +1,9 @@
-@import "nullstyle.scss";
+@import "nullstyle";
 @import "mixins";
-@import "fonts.scss";
-@import "advantages-wlc.scss";
-@import "advantages-main.scss";
-@import "advantages-pricing.scss";
+@import "fonts";
+@import "advantages-wlc";
+@import "advantages-main";
+@import "advantages-pricing";
 
 
 //  common styles
@@ -58,87 +58,3 @@ h4 {
         max-width: 1200px;
     }
 }
-
-
-// @media (min-width: 768px) {
-
-//     /* // контейнер не ставити */
-//     .container {
-//         max-width: 1200px;
-//         display: flex;
-//         flex-direction: column;
-//         justify-items: center;
-//         align-items: center;
-//     }
-
-//     .code-image-big {
-//         display: none;
-//     }
-
-//     .pricing-title {
-//         font-size: 42px;
-//         line-height: 44px;
-//     }
-
-//     .pricing-plans {
-//         grid-template-columns: repeat(2, 1fr);
-//         padding-bottom: 153px;
-//         gap: 20px;
-//     }
-
-
-
-
-//     .recommended-option {
-//         margin: -20px -10px -40px -10px;
-//     }
-// }
-
-
-
-/* @media (min-width: 320px) and (max-width: 480px) {
-    .container {
-        max-width: 480px;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-    }
-
-}
-
-@media (min-width: 481px) and (max-width: 992px) {
-    .container {
-        max-width: 992px;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-    }
-}
-
-
-@media (min-width: 993px) and (max-width: 1200px) {
-    .container {
-        max-width: 1200px;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-    }
-} */
-
-
-/* Стилі для екранів шириною 320px і більше до 767px */
-/* @media (min-width: 320px) and (max-width: 767px) {
-    .pricing-plans {
-        grid-template-columns: 1fr; Одна колонка */
-/* }
-} */
-
-/* Стилі для екранів шириною 768px і більше */
-/* @media (min-width: 768px) {
-    .pricing-plans {
-        grid-template-columns: repeat(2, 1fr); /* Дві колонки */
-/* }
-} */

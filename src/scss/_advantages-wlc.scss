@@ -1,12 +1,10 @@
 /* advantages block styles */
-
-.advantages {
-    padding-left: 13px;
-    padding-right: 14px;
-}
-
+@use "mixins";
 
 .advantages__wlc {
+    padding-left: 13px;
+    padding-right: 14px;
+
     &__description {
         padding-top: 27px;
         text-wrap: balance;
@@ -14,12 +12,12 @@
 
     .advantages__list {
 
-        @include PosElFlex();
+        @include PosElFlex(flex, row, center, center);
         flex-wrap: wrap;
         gap: 10px;
 
         .advantages__list-item {
-            @include PosElFlex();
+            @include PosElFlex(flex, row, center, center);
 
 
             .advantages__list-link {
@@ -27,11 +25,10 @@
                 border-top-left-radius: 6px;
                 border-bottom-left-radius: 6px;
                 background-image: linear-gradient(to bottom, #e3e3e7, #cccccc);
-                padding: 5px 15px;
                 border-right-width: 0;
 
                 & svg {
-                    vertical-align: text-top;
+                    vertical-align: text-bottom;
                     padding-right: 4px;
                 }
             }
@@ -62,8 +59,7 @@
         padding-top: 36px;
 
         .advantages__list-link {
-            // padding: 1px 8px;
-            padding: 5px 15px;
+            padding: 1px 8px;
 
             color: #323232;
             font-family: "Montserrat Bold";
@@ -74,8 +70,7 @@
         }
 
         .advantages__list-counter {
-            padding: 5px 10px;
-            // padding: 3px 8px;
+            padding: 1px 8px;
 
             color: #323232;
             font-family: "Montserrat Bold";
@@ -109,7 +104,7 @@
             row-gap: 20px;
 
             .advantages__list-link {
-                padding: 3px 12px;
+                padding: 5px 12px;
 
                 color: #323232;
                 font-family: "Montserrat Bold";
@@ -120,7 +115,7 @@
             }
 
             .advantages__list-counter {
-                padding: 3px 12px;
+                padding: 5px 12px;
 
                 color: #323232;
                 font-family: "Montserrat Bold";

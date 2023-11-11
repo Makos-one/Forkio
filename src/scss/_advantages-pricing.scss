@@ -1,0 +1,263 @@
+/* advantages pricing styles */
+
+.advant-pricing-sect {
+    padding-top: 2px;
+
+    color: #323232;
+    position: relative;
+    font-family: "Montserrat";
+
+    &::before {
+        content: '';
+        z-index: -1;
+        @include PseudoPosAbs(absolute);
+        top: 0;
+        left: 0;
+        background-image: url('../img/background/pricing-background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    &__title {
+        text-align: center;
+        font-family: "Montserrat Bold";
+        color: #FFF;
+        font-size: 28px;
+        line-height: 42px;
+        text-transform: none;
+    }
+}
+
+.advant-pricing-sect__pricing-option {
+
+    background-color: rgba(255, 255, 255, 0.11);
+    text-align: center;
+
+    .advant-pricing-sect__option-title {
+
+        font-size: 23px;
+        line-height: 24px;
+        font-family: "Montserrat";
+        color: #ffffff;
+
+        text-transform: uppercase;
+
+        padding-top: 36px;
+        padding-bottom: 36px;
+        margin-bottom: 30px;
+
+        width: 100%;
+        background-color: rgba(255, 255, 255, .06);
+
+    }
+
+    .advant-pricing-sect__option-price {
+        font-size: 57px;
+        line-height: 57px;
+        margin-bottom: 20px;
+
+        & span {
+            font-weight: 700;
+            text-decoration: none;
+            color: #ffffff;
+        }
+    }
+
+    .advant-pricing-sect__price-period {
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        margin-bottom: 73px;
+        position: relative;
+        color: #ffffff;
+
+        &::after {
+            content: '';
+            @include PseudoPosAbs(absolute, 60px, 5px);
+            background-color: rgba(141, 129, 172, 1);
+            top: 38px;
+            left: 50%;
+            transform: translateX(-30px);
+        }
+    }
+
+    .advant-pricing-sect__license-type {
+        font-size: 16px;
+        line-height: 16px;
+        min-height: 44px;
+        max-width: 210px;
+        margin: 0 auto;
+
+        color: #ffffff;
+    }
+
+    .advant-pricing-sect__purchase-btn {
+        display: inline-block;
+        font-size: 15px;
+        line-height: 15px;
+        text-transform: uppercase;
+        padding: 14px 36px;
+        margin-top: 36px;
+        margin-bottom: 38px;
+        border-radius: 21px;
+        background-color: rgba(255, 255, 255, 0.15);
+        color: #FFFFFF;
+    }
+}
+
+.recommended-option {
+    background-color: rgba(70, 48, 72, 0.84);
+    transform: scale(1.15, 1.17);
+    max-width: 299px;
+    max-height: 560px;
+    overflow: hidden;
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+
+    .advant-pricing-sect__option-title {
+        background-color: rgba(0, 0, 0, 0.11);
+        margin-bottom: 14px;
+    }
+
+    .advant-pricing-sect__option-price {
+        line-height: 78px;
+        font-size: 78px;
+        margin-bottom: 16px;
+    }
+
+    .advant-pricing-sect__price-period {
+        margin-bottom: 91px;
+
+        &::after {
+            top: 46px
+        }
+    }
+
+    .advant-pricing-sect__purchase-btn {
+        font-size: 16px;
+        line-height: 16px;
+        border-radius: 26px;
+    }
+
+}
+
+
+
+
+@media (min-width:320px) and (max-width:480px),
+(max-width:320px) {
+    .advant-pricing-sect {
+        padding-top: 10px;
+        padding-bottom: 50px;
+
+        &__title {
+            font-size: 28px;
+            line-height: 42px;
+            margin-bottom: 50px;
+        }
+
+        .advant-pricing-sect__pricing-plans {
+            @include PosElFlex (flex, column, space-evenly, center);
+            gap: 48px;
+
+            .advant-pricing-sect__pricing-option {
+                width: 257px;
+            }
+
+        }
+    }
+}
+
+
+@media (min-width:481px) {
+    .advant-pricing-sect {
+        padding-top: 79px;
+        padding-bottom: 94px;
+
+        &__title {
+            font-size: 42px;
+            line-height: 44px;
+            margin-bottom: 89px;
+        }
+
+        .advant-pricing-sect__pricing-plans {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 25px;
+            row-gap: 71px;
+            justify-items: center;
+
+            .advant-pricing-sect__pricing-option {
+                width: clamp(210px, 220px, 257px);
+
+                &:nth-child(2n) {
+                    margin-right: auto;
+                }
+
+                &:nth-child(2n+1) {
+                    margin-left: auto;
+                }
+            }
+
+        }
+    }
+}
+
+@media (min-width: 650px) {
+    .advant-pricing-sect {
+        padding-top: 79px;
+        padding-bottom: 94px;
+
+        &__title {
+            font-size: 42px;
+            line-height: 44px;
+            margin-bottom: 89px;
+        }
+
+        .advant-pricing-sect__pricing-plans {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 25px;
+            row-gap: 71px;
+            justify-items: center;
+
+            .advant-pricing-sect__pricing-option {
+                width: 257px
+            }
+
+        }
+    }
+}
+
+@media(min-width:993px) {
+    .advant-pricing-sect {
+        padding-top: 88px;
+        padding-bottom: 97px;
+
+        &__title {
+            font-size: 48px;
+            line-height: 50px;
+            margin-bottom: 112px;
+        }
+
+        .advant-pricing-sect__pricing-plans {
+            @include PosElFlex (flex, row, space-evenly, center);
+            gap: 15px;
+            flex-wrap: nowrap;
+
+            .advant-pricing-sect__pricing-option {
+                &:nth-child(2n) {
+                    margin-right: unset;
+                }
+
+                &:nth-child(2n+1) {
+                    margin-left: unset;
+                }
+
+            }
+        }
+    }
+}
