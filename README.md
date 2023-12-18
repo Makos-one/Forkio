@@ -36,3 +36,4 @@ default -  виконує завдання build, а потім dev
 
 
 Посилання на сайт:
+https://makos-one.github.io/Forkio/dist/index.html
