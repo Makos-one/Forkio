@@ -1,0 +1,597 @@
+.heder {
+    background-image: url(../img/img1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 900px;
+}
+
+.heder__text-logo {
+    color: #8D81AC;
+    font-family: 'Lato Bold';
+    font-size: 24px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    margin-left: 20px;
+}
+
+.heder__logo {
+    display: flex;
+    align-items: center;
+    width: 164px;
+    height: 41px;
+    margin-left: 90px;
+}
+
+.heder__menu-text {
+    font-family: 'Montserrat Bold';
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #8D81AC;
+    cursor: pointer;
+}
+
+
+.heder__menu-ul {
+    display: flex;
+    gap: 60px;
+    margin-left: 43%;
+
+    width: 100%;
+    margin-top: -27px;
+}
+
+nav {
+
+    align-items: center;
+    padding-top: 2%;
+}
+
+.btn-heder {
+    border: none;
+    padding: 15px 40px;
+    border-radius: 45px;
+    color: white;
+    background: #8D81AC;
+    font-family: 'Montserrat Bold';
+    font-size: 16px;
+    line-height: 17px;
+    cursor: pointer;
+    display: flex;
+    margin-top: -32px;
+    margin-left: auto;
+    margin-right: 5%;
+    max-width: 1200px;
+}
+
+.heder__logo-img2 {
+    display: none;
+}
+
+.heder__logo:hover {
+    .heder__logo-img {
+        display: none;
+    }
+
+    .heder__logo-img2 {
+        display: block;
+    }
+
+    .heder__text-logo {
+        color: white;
+    }
+}
+
+.heder__menu-text:hover {
+    color: white;
+}
+
+.btn-heder:hover {
+    color: #8D81AC;
+    background-color: white;
+}
+
+.fork-app {
+    color: white;
+    font-family: 'Montserrat Bold';
+    font-size: 82px;
+    line-height: 82px;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.fork-app__slogan {
+    color: #8D81AC;
+    font-family: 'Lato';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fork-app__version {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 15px;
+    text-align: center;
+    color: #848E97;
+}
+
+.download__div {
+    display: flex;
+    justify-content: center;
+    margin-top: -28px;
+}
+
+.download__btn {
+    font-family: 'Montserrat Bold';
+    font-size: 21px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: center;
+    background: #8D81AC;
+    border: none;
+    padding: 15px 60px;
+    border-radius: 33px;
+    color: white;
+    cursor: pointer;
+    position: sticky;
+}
+
+.trial-period {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 15px;
+    text-align: center;
+    color: #848E97;
+}
+
+.download__btn:hover {
+    border: 2px solid #8D81AC;
+    background-color: white;
+    color: #8D81AC;
+}
+
+.people {
+    background-color: #4A3B4E;
+    background-image: url(../img/testmonials1.png);
+    width: 100%;
+    // padding-bottom: 10px; - тут не нужен нижний падинг (Максим)
+    // margin-top: 100px; - тут не нужен верхний марджин (Максим)
+    background-size: cover;
+}
+
+.people__title {
+    font-family: 'Montserrat Bold';
+    font-size: 48px;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+
+.people__section-text {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Lato Bold';
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+.people__section-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.people__section3-img {
+    display: flex;
+    justify-content: center;
+}
+
+.section-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 85px;
+    justify-items: center;
+    padding: 10px;
+}
+
+.people__footer-text {
+    color: #A291A5;
+    text-align: center;
+    font-family: "Lato";
+    font-size: 14px;
+    font-style: normal;
+    line-height: 21px;
+    margin: auto;
+    max-width: 887px;
+
+    margin-top: 65px;
+}
+
+.people__footer-line {
+    max-width: 780px;
+    height: 2px;
+    border: none;
+    background: #645766;
+    margin: 0 auto;
+}
+
+.logo__menu {
+    display: none;
+}
+
+.logo__menu2 {
+    display: none;
+}
+
+.menu__mobail-ul {
+    display: none;
+}
+
+.people__section-img {
+    height: 64px;
+}
+
+.logo__menu {
+    display: none;
+}
+
+#image {
+    display: none;
+}
+
+.heder__menu-a:hover {
+    color: white;
+}
+
+.heder__menu-a {
+    color: #8D81AC;
+}
+
+.heder__menu-ul {
+    list-style-type: none;
+}
+
+.heder__menu-a {
+    text-decoration: none;
+}
+
+
+@media(min-width:1200px) {
+    .heder__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+.heder {
+    background-size: cover;
+    background-position: center;
+}
+
+.fork-app__article {
+    margin-top: 83px;
+}
+
+.people {
+    background-size: cover;
+    background-position: center;
+}
+
+.heder__menu-a {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+@media (min-width: 993px) {
+    .heder {
+        background-image: url(../img/img1.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 900px;
+    }
+
+    .section-wrapper {
+        margin: 0 auto;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .people__section {
+        padding: 10px;
+        width: auto;
+        height: auto;
+    }
+
+    .heder__logo {
+        margin: 0;
+    }
+
+    .heder__menu-ul {
+        margin: 0;
+        width: auto;
+    }
+
+    .btn-heder {
+        margin: 0;
+    }
+
+    .heder__block {
+        margin: 0 auto;
+        max-width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+}
+
+@media(min-width: 481px) and (max-width: 992px) {
+    .heder {
+        background-image: url(../img/img1.png);
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+    }
+
+    .section-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+    }
+
+    .people__section {
+        width: 90%;
+    }
+
+    .btn-heder {
+        display: flex;
+        padding: 7px 26px;
+        margin-top: -70px;
+        margin-left: 23px;
+        margin-left: auto;
+        margin-right: 3%;
+    }
+
+    .heder__menu-ul {
+        margin: 0 auto;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .fork-app {
+        color: #FFF;
+        text-align: center;
+        font-family: "Montserrat Bold";
+        font-size: 72px;
+        font-style: normal;
+        line-height: 72px;
+    }
+
+    .fork-app__slogan {
+        color: #8D81AC;
+        text-align: center;
+        font-family: "Lato";
+        font-size: 24px;
+        font-style: normal;
+        line-height: 24px;
+
+        display: flex;
+
+        height: 21px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .heder__menu-text {
+        margin-top: 15px;
+    }
+
+    .heder__logo {
+        margin-left: 17px;
+    }
+
+    .heder__logo-img {
+        margin-top: 20px;
+    }
+
+    .heder__text-logo {
+        margin-top: 20px;
+    }
+
+    .heder__logo-img2 {
+        margin-top: 20px;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    .heder__block {
+        width: 100%;
+        height: 80px;
+
+        background: #27262A;
+    }
+
+    .fork-app__article {
+        margin-top: 130px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 480px) {
+    .heder {
+        background-image: url(../img/img1.png);
+        background-size: cover;
+        width: 100%;
+
+        background-position: center;
+    }
+
+    .heder__menu-ul {
+        display: none;
+    }
+
+    .fork-app {
+        font-size: 48px;
+    }
+
+    .fork-app__slogan {
+        color: #8D81AC;
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        width: 298.892px;
+        height: 52px;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .logo__menu {
+        display: flex;
+        justify-content: end;
+        margin-top: 0;
+        margin-right: 0;
+        display: block;
+    }
+
+    .logo__menu2 {
+        display: none;
+    }
+
+    .heder__text-logo {
+        display: none;
+    }
+
+    .btn-heder {
+        padding: 13px 30px;
+        margin-top: -13%;
+        margin-top: -10%;
+        margin: 0;
+    }
+
+    .heder__logo {
+        margin-left: 0;
+        margin-top: 0;
+        width: auto;
+        height: 0;
+    }
+
+    .btn-heder {
+        margin-left: 0;
+        font-size: 15px;
+    }
+
+    .heder__block {
+        background-color: #27262A;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 31px 16px;
+    }
+
+    .people {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    .section-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+    }
+
+    .people__footer-text {
+        padding: 25px;
+    }
+
+    .people__section {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Lato Bold';
+        font-size: 16px;
+        font-style: italic;
+        line-height: 24px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .people__title {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Montserrat Bold';
+        font-size: 36px;
+        font-style: normal;
+        line-height: 48px;
+    }
+
+    .menu__mobail-ul {
+        height: 378px;
+        width: 95%;
+        margin: auto;
+        background-color: #3B3B3B;
+    }
+
+    .menu__mobail-a {
+        text-decoration: none;
+        position: relative;
+        color: white;
+        border-bottom: 1px solid #8D81AC;
+        padding: 29px;
+        display: block;
+        font-family: 'Montserrat';
+        font-size: 26px;
+        font-style: normal;
+        line-height: 26px;
+    }
+
+    .fork-app__article {
+        display: block;
+        margin-top: 75px;
+    }
+
+    .menu__mobail-a.active:before {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 53px;
+        background: #8D81AC;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+@media (min-width: 480px) {
+    .logo__menu,.logo__menu2,.menu__mobail-ul{
+        display: none!important;
+    }
+}
