@@ -37,4 +37,4 @@ dev -  запук сервера та слідкування за змінами
 default -  виконує завдання build, а потім dev
 
 
-Посилання на сайт:
+Посилання на сайт: https://makos-one.github.io/Forkio/dist/index.html
